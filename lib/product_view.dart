@@ -1,7 +1,8 @@
+
 import 'package:flutter/material.dart';
 
-class Product_View extends StatelessWidget {
-  const Product_View({super.key});
+class ProductView extends StatelessWidget {
+  const ProductView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,6 @@ class Product_View extends StatelessWidget {
           children: [
             Image.asset('assets/Screenshot 2026-01-28 144747.png'),
             const SizedBox(height: 12),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -35,13 +35,11 @@ class Product_View extends StatelessWidget {
                 Icon(Icons.favorite_border, size: 28),
               ],
             ),
-
             Text(
               '1kg, price',
               style: TextStyle(fontSize: 16, color: Colors.grey),
             ),
             const SizedBox(height: 20),
-
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -74,7 +72,6 @@ class Product_View extends StatelessWidget {
                     ),
                   ],
                 ),
-
                 Text(
                   "\$4.99",
                   style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -116,15 +113,12 @@ class Product_View extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        // النجوم
                         Row(
                           children: List.generate(
                             5,
                             (index) => Icon(
                               Icons.star,
-                              color: Color(
-                                0xFFF3603F,
-                              ),
+                              color: Color(0xFFF3603F),
                               size: 18,
                             ),
                           ),
@@ -143,3 +137,4 @@ class Product_View extends StatelessWidget {
     );
   }
 }
+
